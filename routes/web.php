@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\HomeController;
+
+use App\Http\Controllers\UserController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,4 +23,8 @@ Route::get('/', function () {
 
 Auth::routes(['verify' => true]);
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware('verified');
+Route::post('/account/update', [UserController::class, 'accountUpdate'])->name('account-update');
+
+Route::get('home', [HomeController::class, 'index'])->name('home')->middleware('verified');
+
+Route::get('status', [UserController::class, 'userOnlineStatus']);

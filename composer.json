@@ -11,7 +11,8 @@
         "laravel/framework": "^8.75",
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
-        "laravel/ui": "*"
+        "laravel/ui": "*",
+        "intervention/image": "^2.7"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.6",
@@ -27,7 +28,10 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
-        }
+        },
+        "files" : [
+            "app/Utilities/Helper.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
