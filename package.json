@@ -10,6 +10,8 @@
         "production": "mix --production"
     },
     "devDependencies": {
+        "sweetalert2": "^11.0.17",
+        "@mdi/font": "^5.5.55",
         "@popperjs/core": "^2.10.2",
         "axios": "^0.21",
         "bootstrap": "^5.1.3",
@@ -21,6 +23,10 @@
         "sass-loader": "^11.0.1",
         "vue": "^2.6.12",
         "vue-loader": "^15.9.8",
-        "vue-template-compiler": "^2.6.12"
+        "vue-template-compiler": "^2.6.12",
+        "vue-apexcharts": "^1.6.2",
+        "vuetify": "^2.5.3",
+        "vuex": "^3.6.2",
+        "vue-router": "^3.5.1"
     }
 }

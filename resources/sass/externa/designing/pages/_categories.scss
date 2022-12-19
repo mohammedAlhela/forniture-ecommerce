@@ -1,0 +1,11 @@
+.categories-container {
+    opacity: 0;
+    transition: .6s all ease-in-out;
+    @extend .admins-pages-container ;
+}
+
+.show_content {
+    opacity: 1;
+}
+
+

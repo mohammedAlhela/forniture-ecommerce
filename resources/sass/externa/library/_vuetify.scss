@@ -1,0 +1,122 @@
+.theme--light.v-label,
+.theme--light.v-input,
+.theme--light.v-input input,
+.theme--light.v-input textarea,
+.theme--light.v-list-item:not(.v-list-item--active):not(.v-list-item--disabled),
+.theme--light.v-select .v-select__selection--comma,
+.v-list-item .v-list-item__subtitle {
+    color: $black-gray !important;
+    letter-spacing: 1px;
+}
+
+.v-data-table > .v-data-table__wrapper > table > tbody > tr > td,
+.v-data-table > .v-data-table__wrapper > table > thead > tr > td,
+.v-data-table > .v-data-table__wrapper > table > tfoot > tr > td {
+    font-size: 0.875rem;
+    height: 48px;
+    font-weight: 500;
+    color: $black-gray;
+}
+
+.v-application--is-ltr
+    .v-data-table
+    > .v-data-table__wrapper
+    > table
+    > tbody
+    > tr
+    > th,
+.v-application--is-ltr
+    .v-data-table
+    > .v-data-table__wrapper
+    > table
+    > thead
+    > tr
+    > th,
+.v-application--is-ltr
+    .v-data-table
+    > .v-data-table__wrapper
+    > table
+    > tfoot
+    > tr
+    > th {
+    font-size: 14px !important;
+    color: $black-gray !important;
+}
+
+.theme--light.v-navigation-drawer {
+    position: fixed;
+    z-index: 999 !important;
+}
+
+.v-data-table-header {
+    background-color: aliceblue;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: $black-gray;
+}
+
+// front end panes
+.v-expansion-panel::before {
+    box-shadow: none !important;
+}
+
+.theme--light.v-expansion-panels .v-expansion-panel {
+    background: transparent !important;
+}
+
+.v-expansion-panels--accordion > .v-expansion-panel {
+    background: transparent !important;
+}
+
+// change the owl slider designing
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot span {
+    width: 20px !important;
+}
+
+.swal2-popup .swal2-title {
+    line-height: inherit !important;
+    color: $black-gray !important;
+}
+
+.v-overlay {
+    display: flex !important;
+    // padding: 60px 100px;
+}
+
+.v-main {
+    background-color: #fdfdfd !important;
+}
+
+.v-application--wrap {
+    min-height: auto !important;
+}
+
+// remove hover effect from the vuetify datatable
+.theme--light.v-data-table
+    tbody
+    tr:hover:not(.v-data-table__expanded__content) {
+    background: white !important;
+}
+
+.v-messages__message {
+    font-size: 14px !important;
+    color: $red !important;
+    display: inline-block;
+    font-weight: 800px !important;
+}
+
+// .disabled_button {
+//     color: rgb(177 176 176 / 38%) !important;
+//     display: none;
+// }
+
+
+
+// shop sort field

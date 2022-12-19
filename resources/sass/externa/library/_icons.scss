@@ -1,0 +1,50 @@
+.validation-icon {
+  font-size: 10px !important ;
+  color: $light-red !important;
+  position: relative;
+  top: -2px;
+}
+
+.icon {
+  font-size: 20px !important;
+  color:  $black-gray !important;
+}
+
+.white-icon {
+  @extend .icon;
+  color: white !important;
+}
+
+.icon::after {
+  background-color: white !important;
+}
+
+// frontend ++++++++++++++++++++++++++++++++++++
+
+//navbar
+.front-end-icon {
+  color: $black-gray !important;
+  font-size: 30px !important;
+  cursor: pointer;
+  &:hover {
+    color: $main-color !important;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 26px !important;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 23px !important;
+  }
+}
+
+.activeFrontEndIcon {
+  color: $main-color !important;
+}
+
+.active_menu_icon {
+  color: $main-color !important;
+}
+//navbar
+// frontend ++++++++++++++++++++++++++++++++++++

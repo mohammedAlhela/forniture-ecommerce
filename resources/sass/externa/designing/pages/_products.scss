@@ -1,0 +1,47 @@
+.products-container {
+    padding: 10px 0px 50px;
+    position: relative;
+    opacity: 0;
+    transition: 0.6s all ease-in-out;
+    margin: 50px 0px 50px 0px ;
+    width: 96%;
+    margin-left: 2%;
+    @media (max-width: 1000px) {
+      width: 90%;
+      margin-left: 5%;
+      overflow: auto !important;
+    }
+
+
+    .overflow-products-table {
+
+
+        @media (max-width: 1000px) {
+
+        min-width : 1000px !important;
+
+
+          }
+    }
+
+
+
+    .colors-holder { 
+        background: #ebebeb;
+        padding: 6px;
+     color : rgb(152, 151, 151)
+    }
+
+
+
+
+    .active_link {
+        color: $primary !important;
+    }
+}
+
+.show_content {
+    opacity: 1;
+}
+
+

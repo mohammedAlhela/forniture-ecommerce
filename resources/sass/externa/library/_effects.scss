@@ -1,0 +1,56 @@
+.no-focus {
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn-check:focus+.btn, .btn:focus {
+  outline: 0;
+  box-shadow: none !important;
+}
+
+.clearing {
+  clear: both;
+}
+
+.pointer {
+  cursor: pointer !important;
+}
+
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+  outline: none !important;
+}
+
+
+
+.set-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+
+.show_products {
+  opacity: 1;
+}
+
+
+.opacity-false {
+  opacity: 0;
+  transition: .4s all ease;
+}
+
+.opacityTrue {
+  opacity: 1 !important;
+}
+
+.hovered {
+  &:hover {
+    color: $main-color !important;
+    transition: .2s all ease;
+  }
+}
+

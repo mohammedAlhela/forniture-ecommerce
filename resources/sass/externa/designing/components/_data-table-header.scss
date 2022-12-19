@@ -1,0 +1,25 @@
+.left-header-section,
+.right-header-section {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.left-header-section {
+  padding-left: 15px;
+  .add-button {
+    margin-top: -10px;
+  }
+}
+
+.right-header-section {
+  padding-right: 15px;
+  display: flex;
+  justify-content: flex-end;
+  .search-input {
+    max-width: 400px;
+  }
+
+  @media(max-width : 960px) {
+      justify-content: flex-start;
+  }
+}

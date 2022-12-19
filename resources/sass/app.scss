@@ -6,3 +6,24 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+// admin application designing
+@import './externa/admins.scss';
+
+// custom designing 
+@import './custom-designing/404';
+
+@import './custom-designing/authentication';
+
+@import './externa/pages/home';
+
+@import './externa/pages/reports';
+
+
+// last designing 
+@import './designing/loader';
+
+
+
+
+ 

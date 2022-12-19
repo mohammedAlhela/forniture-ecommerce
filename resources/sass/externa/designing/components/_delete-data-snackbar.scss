@@ -1,0 +1,55 @@
+@mixin snackbar-button {
+  text-transform: capitalize;
+  height: 26px !important;
+  font-size: 12px !important;
+  &:focus {
+    outline: none;
+  }
+}
+
+
+.delete-snackbar {
+  background-color: $black;
+  color: whitesmoke;
+  border-radius: 20px 4px 20px 4px;
+  min-height: 50px;
+  max-width: 600px;
+  padding: 10px 10px 10px 25px !important;
+  font-size: 15px;
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+
+  top: 0px;
+  z-index: 99999;
+  left: calc(50% - 250px);
+  @media (max-width: 600px) {
+    left: 10px;
+  }
+  position: fixed !important;
+  .confirm-button {
+    margin-top: 10px;
+  
+    background-color: #4a3838 !important;
+    @include snackbar-button;
+    color: $red !important;
+    margin-left: 30px;
+  }
+
+  .cancel-button {
+    margin-top: 10px;
+    background: #383838 !important;
+    @include snackbar-button;
+    color: whitesmoke !important;
+    margin-left: 15px;
+  }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}

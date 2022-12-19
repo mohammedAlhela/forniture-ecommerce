@@ -1,0 +1,121 @@
+
+.admins-pages-container {
+  padding: 10px 20px 50px;
+  margin: 50px 0px 50px 0px ;
+  width: 90%;
+  margin-left: 5%;
+  @media (max-width: 1200px) {
+    width: 96%;
+    margin-left: 2%;
+  }
+}
+
+// make a transition after the data fetched
+.show_content {
+    opacity: 1;
+}
+
+
+
+.w-100 {
+  width: 100px;
+}
+
+.m-w-300 {
+  max-width: 300px;
+}
+
+.snackbar-span {
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-size: smaller;
+  display: inline-block;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+
+.light-snackbar-span {
+  @extend .snackbar-span;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid rgb(236, 232, 232);
+  color: $black-gray;
+  &:hover {
+    background-color: $gold;
+    color: white;
+  }
+}
+
+.items-snackbar-span {
+  @extend .snackbar-span;
+  background-color: $primary;
+  color: white;
+}
+
+
+.my-hr {
+  color: gray ;
+}
+
+
+// cards
+
+
+.small-card-header-title {
+    padding: 5px 20px 5px 20px !important;
+    background: aliceblue;
+}
+
+
+
+.form {
+  text-align: left;
+  padding: 20px 20px 10px 20px;
+
+
+  .input-header {
+    padding: 0px 0px 5px 5px;
+
+    span {
+      @extend .header;
+    }
+  }
+
+  .buttons-holder {
+    margin: -10px 0px 0px 5px;
+  }
+
+
+  .textarea-form-buttons-holder {
+    margin: 5px 0px 5px 15px;
+  }
+
+  .menu-form-buton-holder {
+    margin: -10px 0px 5px 15px;
+  }
+}
+
+
+// disabled icon buttons
+
+.disabled {
+    color: rgb(179 179 179 / 38%) !important;
+}
+
+.admins-bg {
+    background-color: #fdfdfd;
+}
+
+
+
+
+
+.customers-nav { 
+  padding: 15px 30px;
+  background: #333; 
+  text-align: center;
+  a { 
+    text-decoration: underline;
+    color: #e7e7e7 !important;
+  }
+}

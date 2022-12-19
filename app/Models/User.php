@@ -2,37 +2,21 @@
 
 namespace App\Models;
 
-use Illuminate\Contracts\Auth\MustVerifyEmail;
+// use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-use Laravel\Sanctum\HasApiTokens;
 
-class User extends Authenticatable implements MustVerifyEmail
+class User extends Authenticatable  
 {
-    use HasApiTokens, HasFactory, Notifiable;
+    use HasFactory, Notifiable;
 
     /**
      * The attributes that are mass assignable.
      *
      * @var array<int, string>
      */
-    protected $fillable = [
-        'username',
-        'email',
-        'password',
-        'role',
-        'image',
-        'password',
-        'status',
-        'last_seen',
-        'first_name',
-        'last_name',
-        'address',
-        'street',
-        'emirate',
-        'contact_number',
-        'zip_code',
+    protected $guarded = [
 
     ];
 
@@ -54,4 +38,13 @@ class User extends Authenticatable implements MustVerifyEmail
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+
+    public function permissions(){
+        return $this->belongsToMany(Permission::class , 'permission_user', 'user_id', 'permission_id');
+    }
+
+    public function permissionsNames(){
+      return $this->permissions->pluck('name')->toArray();
+    }
 }

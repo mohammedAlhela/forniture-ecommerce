@@ -1,0 +1,17 @@
+
+
+// // components +++++++++++
+ @import'./components/main.scss';
+// // components +++++++++++
+
+// pages +++++++++++
+ @import'./pages/main.scss';
+// pages +++++++++++
+
+
+@media (min-width:960px)  {
+    .right-header-section {
+        height: 0px;
+    }
+}
+

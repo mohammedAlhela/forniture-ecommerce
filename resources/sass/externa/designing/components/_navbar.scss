@@ -1,0 +1,140 @@
+.account-menu-holder {
+    list-style: none !important;
+
+    position: absolute;
+    right: 10px;
+    z-index: 9;
+    top: 10px;
+
+    .dropdown-menu {
+        padding-left: 0px !important;
+    }
+}
+
+a {
+    color: rgb(152 151 151) !important;
+}
+
+.navbar-nav {
+    padding-left: 0px !important;
+}
+
+@media (max-width: 991px) {
+    .account-menu-holder {
+        display: none;
+    }
+}
+
+.account-menu-holder .paragraph {
+    color: rgba(49, 48, 48, 0.5);
+    font-size: 15px;
+}
+
+.brand-image {
+    width: 60px;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+
+.navbar {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+}
+
+.brand-image {
+    display: inline-block;
+}
+
+.bread-crumb {
+    margin-left: 20px;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    color: #959393;
+    font-size: 15px;
+}
+
+.bread-crumb a {
+    color: #959393 !important;
+}
+
+.search-input {
+}
+
+.container {
+    position: relative;
+}
+
+.search-input-holder {
+    position: absolute;
+    right: 0px;
+}
+
+.nav-link {
+    color: rgb(152 151 151) !important;
+    display: inline-block !important;
+}
+
+.active_navbar_link {
+    color: #4da2f7 !important;
+}
+
+.nav-link:hover {
+    color: #4da2f7 !important;
+}
+
+.digital-clock {
+    margin: auto;
+    width: 120px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    border: 2px solid #c1c9cf;
+    border-radius: 4px;
+    text-align: center;
+    font: 20px/20px 'DIGITAL', Helvetica;
+    background: linear-gradient(90deg, #c4ccd2, #c1c9cf);
+    margin-right: 20px;
+}
+
+@media (max-width: 991px) {
+    .digital-clock {
+        display: none;
+    }
+}
+
+.small-screen-menu {
+    list-style: none;
+    display: none;
+    padding-left: 0px !important;
+}
+
+@media (max-width: 991px) {
+    .small-screen-menu {
+        display: block;
+    }
+}
+
+.admins-navbar-container {
+    position: relative;
+
+
+
+}
+
+.collapse {
+    position: relative;
+}
+
+.navbar-toggler{
+     @extend .no-focus; position: relative;
+     top: 15px;
+    padding: 2px 8px !important;
+    .navbar-toggler-icon { 
+     width: 20px !important;
+    
+    }
+}
+
+

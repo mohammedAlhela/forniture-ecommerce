@@ -1,0 +1,96 @@
+.main-header {
+    font-size: 22px;
+    font-weight: normal;
+    color: $black-gray !important ;
+    text-transform: lowercase;
+}
+
+.header {
+    font-size: .9rem;
+    font-weight: 600;
+    color: $black-gray !important ;
+}
+
+.paragraph {
+    font-size: 15px;
+    font-weight: 500;
+    color: $black-gray !important;
+    line-height: 25px;
+}
+
+
+.block-delete-header { 
+    margin-top: 10px !important;
+    padding: 2px 6px;
+    background: #4a4a4a;
+    margin-bottom: 10px !important
+}
+
+.block-delete-paragraph { 
+    padding: 2px 6px;
+    margin-bottom: 10px !important
+}
+.tooltip-report-header { 
+    background-color: rgb(151, 151, 151);
+    padding: 2px 6px;
+}
+.size-guide-header { 
+    background: aliceblue;
+    padding: 10px;
+    position: relative;
+    left: -10px;
+    
+}
+
+
+
+
+
+.white-paragraph {
+    @extend .paragraph;
+    color: white !important;
+}
+
+.hovered-paragraph {
+    @extend .paragraph;
+    font-size: .8rem !important;
+
+    &:hover {
+        color: $primary !important;
+        cursor: pointer;
+    }
+}
+
+.image-paragraph {
+    @extend .paragraph;
+
+    margin-top: 5px;
+    display: inline-block;
+    margin-bottom: 20px
+}
+
+.error-paragraph {
+    @extend .paragraph;
+
+    font-size: 14px !important;
+    color: #e34444 !important;
+    display: inline-block;
+    font-weight: 800px !important;
+}
+
+.primary-font {
+    color: $primary !important;
+}
+
+@media(max-width:600px) { 
+    .main-header { 
+        font-size: 22px;
+    }
+}
+
+
+.chip-font { 
+    color: rgb(152, 151, 151) !important;
+}
+
+

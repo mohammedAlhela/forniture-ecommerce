@@ -1,0 +1,51 @@
+body {
+    box-sizing: border-box !important;
+}
+
+.small-dialog-header {
+  background-color: whitesmoke;
+  padding: 20px 0px 20px 40px !important;
+}
+
+.variations-dialog-container {
+  margin: 30px;
+
+  .variation-card {
+width: 350px;  margin: 20px 20px 20px 0px;
+    display: inline-block;
+
+
+    .informations-holder {
+      margin-top: 20px;
+      padding-left: 10px;
+      div {
+        margin-top: 10px;
+      }
+    }
+  }
+  .image {
+    width: 300px !important;
+
+    border-radius: 5px;
+  }
+}
+
+
+
+
+.size-guides-section { 
+  .informations-holder  { 
+    padding-left: 0px !important;
+    margin-top: 0px !important;
+  }
+  .informations-holder div:nth-of-type(1) { 
+    margin-top: 0px;
+  }
+ .size-card-header { 
+background-color: aliceblue;
+padding: 15px;
+ }
+}
+
+
+

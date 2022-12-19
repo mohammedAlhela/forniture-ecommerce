@@ -1,0 +1,71 @@
+.upload-image-container {
+  display: flex;
+  margin-bottom: 30px;
+  max-height: 200px;
+
+  .small-image-container {
+   width : 200px;
+   display: inline-block;
+
+ 
+  }
+
+  .upload-container {
+
+    padding: 20px;
+    width: 300px;
+    display: inline-block;
+
+
+
+    .custom-file-upload {
+      border: 1px solid  gainsboro;
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: aliceblue;
+      }
+    }
+
+    span { 
+      display: inline-block;
+      max-width: 250px;
+    }
+  }
+
+
+  .user-image {
+
+      width: 200px !important;
+      height: 200px;
+    
+  }
+
+
+  .clear-button { 
+    margin-top: 10px
+  }
+
+}
+
+// .upload-file-container {
+//     @extend .upload-image-container;
+//     .upload-container {
+//         width: 100% !important;
+
+//     }
+
+//     .custom-file-upload {
+//         padding: 0px 12px 2px !important;
+//     }
+
+// }
+
+
+
+.navbar-user-image{ 
+  border-radius: 10%;
+}
